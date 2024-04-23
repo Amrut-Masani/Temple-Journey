@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(33, 141, 155);
+        }
+        header .navbar{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        header .navbar img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+        header .navbar ul{
+            overflow: hidden;
+            margin-right: 20px;
+        }
+        header .navbar ul li{
+            float: left;
+            list-style: none;
+            margin: 0px 20px;
+            transition: 0.2s linear;
+        }
+        header .navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        header .navbar ul li:hover{
+            scale: 1.2;
+        }
+        i{
+            font-size: 400px;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -99;
+            transform: translate(-50%,-50%);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .container img{
+            width: 150px;
+            height: 130px;
+            border-radius: 100%;
+        }
+        .container h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .container p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            word-spacing: 5px;
+        }
+        .co-container{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+        .co-container .cell{
+            display: flex;
+            flex-direction: column;
+        }
+        .co-container .cell label{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .co-container .cell input{
+            width: 200px;
+            height: 30px;
+            border-radius: 12px;
+            outline: none;
+            font-size: 20px;
+            padding-left: 10px;
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.644);
+            color: white;
+        }
+        footer{
+            width: 100%;
+            height: 150px;
+            position: fixed;
+            bottom: 0px;
+        }
+        footer .foot-container{
+            width: 100%;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.644);
+            display: flex;
+            justify-content: space-around;
+            color: #ffffff;
+        }
+        footer .foot-container .foot img{
+            position: fixed;
+            bottom: 110px;
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+        }
+        footer .foot-container .foot #ph1{
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        footer .foot-container .foot #ph2{
+            font-size: 20px;
+            word-spacing: 5px;
+            margin-top: 5px;
+        }
+        footer .foot-container .foot #lo1{
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+        footer .foot-container .foot #lo2{
+            font-size: 15px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="Temple.jpg">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Infomation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+    <div class="container">
+        <img src="download.jpeg">
+        <h3>Contact Us</h3>
+        <p>just write us a message!</p>
+    </div>
+    <div class="co-container">
+        <div class="cell">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="cell">
+            <label for="name">Name</label>
+            <input type="name" id="name">
+        </div>
+    </div>
+    <footer>
+        <div class="foot-container">
+            <div class="foot">
+                <img src="call.jpg">
+                <p id="ph1"><b>Phone</b> (landline)</p>
+                <p id="ph2"><b>+91</b> 235 4654 4321</p>
+            </div>
+            <div class="foot">
+                <img src="loketion.jpg">
+                <p id="lo1">Our Office Location</p>
+                <p id="lo2">16 Divine Darshans of Unique Shivilingas</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
